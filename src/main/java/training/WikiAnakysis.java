@@ -49,10 +49,11 @@ class MyAggregate implements AggregateFunction<WikipediaEditEvent,Tuple2<String,
 
     // 每进入一个元素，累加器对其综合
     @Override
-    public void add(WikipediaEditEvent value, Tuple2<String, Long> accumulator) {
+    public Tuple2<String, Long> add(WikipediaEditEvent value, Tuple2<String, Long> accumulator) {
             accumulator.f0 = value.getUser();
             // 得到编辑的个数
             accumulator.f1 += value.getByteDiff();
+            return accumulator;
     }
 
     @Override

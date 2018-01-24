@@ -1,5 +1,8 @@
 package training.eventjoin;
 
+import com.dataartisans.flinktraining.exercises.datastream_java.datatypes.Customer;
+import com.dataartisans.flinktraining.exercises.datastream_java.datatypes.EnrichedTrade;
+import com.dataartisans.flinktraining.exercises.datastream_java.datatypes.Trade;
 import com.dataartisans.flinktraining.exercises.datastream_java.process.EventTimeJoinFunction;
 import com.dataartisans.flinktraining.exercises.datastream_java.sources.FinSources;
 import org.apache.flink.streaming.api.TimeCharacteristic;
