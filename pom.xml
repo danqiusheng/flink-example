@@ -136,7 +136,7 @@
         <dependency>
             <groupId>com.data-artisans</groupId>
             <artifactId>flink-training-exercises</artifactId>
-            <version>0.13.0</version>
+            <version>0.15.2</version>
         </dependency>
 
 
@@ -148,13 +148,13 @@
         </dependency>
 
         <!--加入RocksDBStateBackend  状态后端 -->
-        <!--     <dependency>
+         <dependency>
                  <groupId>org.apache.flink</groupId>
                  <artifactId>flink-statebackend-rocksdb_${scala.binary.version}</artifactId>
                  <version>${flink.version}</version>
              </dependency>
 
-     -->
+
 
     </dependencies>
 
